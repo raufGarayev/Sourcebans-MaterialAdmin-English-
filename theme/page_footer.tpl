@@ -1,0 +1,90 @@
+</div>
+            </section>
+        </section>
+        
+        <footer id="footer">
+			<div id="sm">
+				Created by <a class="footer_link" href="http://www.sourcemod.net" target="_blank">SourceMod</a> / English version by <a class="footer_link" href="https://steamcommunity.com/id/garazadeh/" target="_blank">GARAYEV</a>
+			</div>
+            
+            <ul class="f-menu">
+                <li>Version <b>{$THEME_VERSION}</b> ({$UPDATE_NUM})</li>
+                <li><a href="https://sbpp.github.io/" target="_blank" class="footer_link">Thanks to <b>SourceBans++</b></a></li>
+                <li><a href="https://github.com/SB-MaterialAdmin" target="_blank" class="footer_link"><b>MATERIAL Admin</b></a></li>
+            </ul>
+            {if $show_gendata}
+            <ul class="f-menu">
+                <li>Generated in {$gendata_time} seconds</li>
+                <li>Request made to {$gendata_queries} DB</li>
+            </ul>
+            {/if}
+        </footer>
+
+        <!-- Page Loader -->
+        {if $splash_screen}
+        <div class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20" />
+                </svg>
+                <p>Please wait...</p>
+            </div>
+        </div>
+        {/if}
+        
+		<!-- Javascript Libraries -->
+        <script type="text/javascript" src="theme/vendors/bower_components/jquery/dist/jquery.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js" ></script>
+        
+        <script type="text/javascript" src="theme/vendors/bower_components/flot/jquery.flot.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/flot/jquery.flot.resize.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/flot.curvedlines/curvedLines.js" ></script>
+        <script type="text/javascript" src="theme/vendors/sparklines/jquery.sparkline.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js" ></script>
+        
+        <script type="text/javascript" src="theme/vendors/bower_components/moment/min/moment.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/Waves/dist/waves.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bootstrap-growl/bootstrap-growl.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" ></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script type="text/javascript" src="theme/vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script type="text/javascript" src="theme/js/flot-charts/curved-line-chart.js" ></script>
+        <script type="text/javascript" src="theme/js/flot-charts/line-chart.js" ></script>
+        <script type="text/javascript" src="theme/js/charts.js" ></script>
+       
+		
+        <script type="text/javascript" src="theme/js/functions.js" ></script>
+        <script type="text/javascript" src="theme/js/demo.js" ></script>
+		
+		<script type="text/javascript" src="theme/vendors/summernote/dist/summernote-updated.min.js" ></script>
+		
+        <script type="text/javascript" src="theme/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js" ></script>
+        <script type="text/javascript" src="theme/vendors/bower_components/chosen/chosen.jquery.min.js" ></script>
+		
+        <script type="text/javascript" src="theme/vendors/input-mask/input-mask.min.js"></script>
+        
+        <script src="theme/vendors/fileinput/fileinput.min.js"></script>
+		
+		<script>
+		  $.noConflict();
+		</script>
+        
+        <script>setInterval(xajax_CSRF, 15000);</script>
+
+        <!-- Cron -->
+        <script type="text/javascript" src="theme/js/cron.js"></script>
+        <script type="text/javascript">RunCron("{$cron_token}");</script>
+        
+        {if $custom_css > 0}
+            <link rel="stylesheet" href="theme/css/custom.css">
+        {/if}
+        <!-- Custom CSS -->
+	{*/body*}
+{*/html*}
