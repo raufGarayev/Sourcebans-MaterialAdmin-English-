@@ -225,7 +225,7 @@ else
 			}
 		} elseif ($_GET['o'] == 'warnings' && $GLOBALS['config']['admin.warns'] == "1") {
 			$tabs = new CTabsMenu();
-			$tabs->addMenuItem("Назад", -1,"", "javascript:history.go(-1);", true);
+			$tabs->addMenuItem("Back", -1,"", "javascript:history.go(-1);", true);
 			$tabs->outputMenu();
 			include(TEMPLATES_PATH . '/admin.admins.warnings.php');
 			RewritePageTitle("List warnings");
@@ -253,7 +253,7 @@ else
 		elseif($_GET['o'] == 'edit')
 		{
 			$serverTabMenu = new CTabsMenu();
-			$serverTabMenu->addMenuItem("Назад", 0,"", "javascript:history.go(-1);", true);
+			$serverTabMenu->addMenuItem("Back", 0,"", "javascript:history.go(-1);", true);
 			$serverTabMenu->outputMenu();		
 			
 			include TEMPLATES_PATH . "/admin.edit.server.php";
