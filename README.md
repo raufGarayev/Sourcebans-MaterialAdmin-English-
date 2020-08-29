@@ -18,7 +18,7 @@ Server plugin that works with this web script: https://github.com/SB-MaterialAdm
 
 - *Built-in module for the list of Administrators divided by server. Included in the settings.*
 
-- *Support for sending letters by the system via SMTP, which allows you to configure sending letters through popular free mail services, if mail () is disabled on the server, not configured, or there is simply no desire to send letters through it. The ability to switch to mail () was added in version 1.1.5*
+- *Support for sending e-mails by the system via SMTP, which allows you to configure sending e-mails through popular free mail services, if mail () is disabled on the server, not configured, or there is simply no desire to send e-mails through it. The ability to switch to mail () was added in version 1.1.5*
 
 - *The ability to load several map images at once, and not one by one, as it is implemented in the original.*
 
