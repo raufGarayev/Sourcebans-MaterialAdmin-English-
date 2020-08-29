@@ -28,7 +28,7 @@ Server plugin that works with this web script: https://github.com/SB-MaterialAdm
 
 - *The ability to hide more detailed information about the Administrator who issued the Ban in the Banlist.*
 
-- *Ability to add and remove blocks from the main page of the system (mutations, bans, locks).*
+- *Ability to add and remove blocks from the main page of the system (mutes, bans, gags).*
 
 - *"Promokey system".*
    + Allows Administrators to "manually" register in the system using a special one-time code that can be issued by the Chief Administrator. The server to which the Administrator will bind and its groups are specified when creating a one-time code.
