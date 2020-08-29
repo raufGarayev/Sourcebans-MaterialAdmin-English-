@@ -159,13 +159,13 @@
 								<td>
 									<div class="col-xs-6 p-b-10" id="admingroup">
 										<select class="selectpicker" TABINDEX=11 onchange="update_server()" name="serverg" id="serverg">
-											<optgroup label="Основное">
+											<optgroup label="Basic">
 												<option value="-2">Choose server group</option>
 												<option value="-3">No permissions</option>
 												<option value="c">Custom permissions</option>
 												<option value="n">New group</option>
 											</optgroup>
-											<optgroup label="Группы">
+											<optgroup label="Groups">
 												{foreach from="$server_admin_group_list" item="server_wg"}
 													<option value='{$server_wg.id}'>{$server_wg.name}</option>
 												{/foreach}
