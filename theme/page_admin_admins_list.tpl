@@ -3,7 +3,7 @@
 {else}
 	<button onclick="window.location.href='{$btn_href}'" class="btn btn-float btn-danger m-btn" {$btn_helpa}><i class="zmdi {$btn_icon}"></i></button>
 	<div class="card-header">
-		<h2>Admins List ({if not $btn_rem}Active: {else}Истекших: {/if}<span id="admincount">{$admin_count}</span>) 
+		<h2>Admins List ({if not $btn_rem}Active: {else}Expired: {/if}<span id="admincount">{$admin_count}</span>) 
 			<small>
 				Click on admin for more information. {$admin_nav_p}
 			</small>
