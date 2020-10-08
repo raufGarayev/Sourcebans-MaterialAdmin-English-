@@ -162,10 +162,10 @@ function AddSupport($aid)
   $res = $GLOBALS['db']->GetOne("SELECT `support` FROM `".DB_PREFIX."_admins` WHERE `aid` = '".$aid."'");
   if($res == "1"){
     $chek = "0";
-    $chek1 = "убран";
+    $chek1 = "removed";
   }else{
     $chek = "1";
-    $chek1 = "добавлен";
+    $chek1 = "added";
   }  
   $query = $GLOBALS['db']->Execute("UPDATE `" . DB_PREFIX . "_admins` SET `support` = ? WHERE `aid` = '".$aid."'", array((int)$chek));
   if($query)
