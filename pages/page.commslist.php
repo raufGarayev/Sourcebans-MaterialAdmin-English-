@@ -77,7 +77,7 @@ if (isset($_GET['a']) && $_GET['a'] == "ungag" && isset($_GET['id']))
 										WHERE b.bid = ? AND b.RemoveType IS NULL AND b.type = 2 AND (b.length = '0' OR b.ends > UNIX_TIMESTAMP())",array($bid));
 	if(empty($row) || !$row)
 	{
-		echo "<script>setTimeout('ShowBox(\"Player is not ungagged\", \"The player was not ungagged, either already ungagged or not a valid block.<br><br><font color=\'green\' class=\'f-15\'><b>Переадресация...</b></font>\", \"red\", \"index.php?p=commslist$pagelink\", false);', 1350);</script>";
+		echo "<script>setTimeout('ShowBox(\"Player is not ungagged\", \"The player was not ungagged, either already ungagged or not a valid block.<br><br><font color=\'green\' class=\'f-15\'><b>Redirecting...</b></font>\", \"red\", \"index.php?p=commslist$pagelink\", false);', 1350);</script>";
 		PageDie();
 	}
 
@@ -195,7 +195,7 @@ else if(isset($_GET['a']) && $_GET['a'] == "delete")
 
 	if($res)
 	{
-		echo "<script>setTimeout('ShowBox(\"Block Deleted\", \"The block for <b>" .StripQuotes($steam['name']). "</b> (<b>".$steam['authid']."</b>) has been deleted from SourceBans. <br><br> <font color=\'green\' class=\'f-15\'><b>Переадресация...</b></font>\", \"green\", \"index.php?p=commslist$pagelink\", false);', 1350);</script>";
+		echo "<script>setTimeout('ShowBox(\"Block Deleted\", \"The block for <b>" .StripQuotes($steam['name']). "</b> (<b>".$steam['authid']."</b>) has been deleted from SourceBans. <br><br> <font color=\'green\' class=\'f-15\'><b>Redirecting...</b></font>\", \"green\", \"index.php?p=commslist$pagelink\", false);', 1350);</script>";
 		$log = new CSystemLog("m", "Block Deleted", "The block for '".StripQuotes($steam['name'])."' (" . $steam['authid'] . ") has been deleted.");
 	}else{
 		echo "<script>setTimeout('ShowBox(\"Block is NOT deleted\", \"The block for <b>".StripQuotes($steam['name'])."</b> had an error while being removed. <br><br><font color=\'green\' class=\'f-15\'><b>Redirecting...</b></font>\", \"red\", \"index.php?p=commslist$pagelink\", false);', 1350);</script>";
