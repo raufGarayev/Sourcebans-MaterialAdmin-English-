@@ -101,9 +101,9 @@ if(!defined("IN_SB")){echo "Permission error!";die();}
 		
 	$pages = (round($log_count/intval($GLOBALS['config']['banlist.bansperpage']))==0)?1:round($log_count/intval($GLOBALS['config']['banlist.bansperpage']));
 	if($pages>1)
-		$page_numbers =  'Страница ' . $page . ' из ' . $pages . " - " . $prev . " | " . $next;
+		$page_numbers =  'Page ' . $page . ' from ' . $pages . " - " . $prev . " | " . $next;
 	else
-		$page_numbers = 'Страница ' . $page . ' из ' . $pages;
+		$page_numbers = 'Page ' . $page . ' from ' . $pages;
 		
 		
 	$pages = ceil($log_count/intval($GLOBALS['config']['banlist.bansperpage']));
