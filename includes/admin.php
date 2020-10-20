@@ -333,7 +333,7 @@ else
 			if($userbank->HasAccess(ADMIN_OWNER|ADMIN_ADD_BAN ) ) {
 				$banTabMenu->addMenuItem("Add comms block", 0);
 			}
-			$banTabMenu->addMenuItem("Список мутов/гагов", 1, "", "index.php?p=commslist",true);
+			$banTabMenu->addMenuItem("Comms block list", 1, "", "index.php?p=commslist",true);
 			$banTabMenu->outputMenu();
 			// ====================[ ADMIN SIDE MENU END ] ===================
 
