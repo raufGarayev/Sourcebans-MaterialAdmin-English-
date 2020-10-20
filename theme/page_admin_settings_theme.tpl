@@ -178,7 +178,7 @@
 						<div class="fg-line">
 							<input type="text" class="form-control" id="bg_scr" name="bg_scr" {if $config_bg_scr_value != ""}value="{$config_bg_scr_value}"{else}placeholder="Enter a link to a picture or a color code in the format #ffffff, or rgb / rgba (Optional)"{/if} />
 						</div>
-						<a href="http://www.stm.dp.ua/web-design/color-html.php" target="_blank">См.: Код цвета для HTML</a>
+						<a href="http://www.stm.dp.ua/web-design/color-html.php" target="_blank">See: Color code for HTML</a>
 					</div>
 				</div>
 				<div class="form-group m-b-5">
