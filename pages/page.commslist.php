@@ -697,7 +697,7 @@ $ban_nav .= '</ul>&nbsp;';
 
 $pages = ceil($BanCount/$BansPerPage);
 if($pages > 1) {
-	$ban_nav_p = ' / Страница: <div class="select" style="display: inline-block;"><select class="form-control" onchange="changePage(this,\'C\',\''.(isset($_GET['advSearch']) ? $_GET['advSearch'] : '').'\',\''.(isset($_GET['advType']) ? $_GET['advType'] : '').'\');" style="display: inline-block;width: 50px;">';
+	$ban_nav_p = ' / Page: <div class="select" style="display: inline-block;"><select class="form-control" onchange="changePage(this,\'C\',\''.(isset($_GET['advSearch']) ? $_GET['advSearch'] : '').'\',\''.(isset($_GET['advType']) ? $_GET['advType'] : '').'\');" style="display: inline-block;width: 50px;">';
 	for($i=1;$i<=$pages;$i++)
 	{
 		if(isset($_GET["page"]) && $i == $_GET["page"]) {
